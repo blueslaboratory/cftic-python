@@ -5,8 +5,8 @@ Ejercicio 1
 Escribir un programa que muestre por pantalla la cadena ¡Hola Mundo!.
 """
 
-print ('\n *** EJERCICIO 1 ***')
-print ('¡Hola Mundo!')
+print('\n *** EJERCICIO 1 ***')
+print('¡Hola Mundo!')
 
 
 
@@ -16,9 +16,9 @@ Escribir un programa que almacene la cadena ¡Hola Mundo! en una
 variable y luego muestre por pantalla el contenido de la variable.
 """
 
-print ('\n *** EJERCICIO 2 ***')
+print('\n *** EJERCICIO 2 ***')
 mensaje = '¡Hola Mundo!'
-print (mensaje)
+print(mensaje)
 
 
 
@@ -29,9 +29,9 @@ y después de que el usuario lo introduzca muestre por pantalla la cadena
 ¡Hola <nombre>!, donde <nombre> es el nombre que el usuario haya introducido.
 """
 
-print ('\n *** EJERCICIO 3 ***')
+print('\n *** EJERCICIO 3 ***')
 nombre = input('Introduce tu nombre: ')
-print ('¡Hola ' +nombre +'!')
+print('¡Hola ' +nombre +'!')
 
 
 
@@ -41,9 +41,9 @@ Escribir un programa que muestre por pantalla el resultado de la siguiente opera
 ((3+2)/(2*5))^2
 """
 
-print ('\n *** EJERCICIO 4 ***')
+print('\n *** EJERCICIO 4 ***')
 operacion = ((3+2)/(2*5))**2
-print ('El resultado es:', operacion)
+print('El resultado es:', operacion)
 
 
 
@@ -53,11 +53,11 @@ Escribir un programa que pregunte al usuario por el número de horas trabajadas 
 Después debe mostrar por pantalla la paga que le corresponde.
 """
 
-print ('\n *** EJERCICIO 5 ***')
+print('\n *** EJERCICIO 5 ***')
 horas = input('Introduce las horas trabajadas: ')
 satoshisPorHora = float(input('Introduce tu precio por hora (丰):' ))
-print ('Paga correspondiente concatenacion: ' +str(int(horas) * int(satoshisPorHora)))
-print ('Paga correspondiente con coma: ', int(horas) * int(satoshisPorHora))
+print('Paga correspondiente concatenacion: ' +str(int(horas) * int(satoshisPorHora)))
+print('Paga correspondiente con coma: ', int(horas) * int(satoshisPorHora))
 
 
 
@@ -69,13 +69,13 @@ La suma de los primeros enteros positivos puede ser calculada de la siguiente fo
 suma = n(n+1)/2
 """
 
-print ('\n *** EJERCICIO 6 ***')
+print('\n *** EJERCICIO 6 ***')
 n = int(input('Introduce un entero positivo: '))
 # division entera
 suma = int(n*(n+1)/2)
 # division entera
 suma = n*(n+1)//2
-print ('Suma de los primeros enteros positivos de 1 hasta ' +str(n) +': ' +str(suma))
+print('Suma de los primeros enteros positivos de 1 hasta ' +str(n) +': ' +str(suma))
 
 
 
@@ -89,7 +89,7 @@ Cálculo de imc: consiste en dividir el peso, expresado en kilos, entre la estat
 en metros, elevada al cuadrado (kg/m^2)
 """
 
-print ('\n *** EJERCICIO 7 ***')
+print('\n *** EJERCICIO 7 ***')
 masa = float(input('Masa corporal (kg): '))
 estatura = float(input('Estatura (m): '))
 
@@ -108,7 +108,7 @@ los números introducidos por el usuario, y <c> y <r> son el cociente y el resto
 entera respectivamente.
 """
 
-print ('\n *** EJERCICIO 8 ***')
+print('\n *** EJERCICIO 8 ***')
 n1 = int(input('Numero entero 1: '))
 n2 = int(input('Numero entero 2: '))
 
@@ -129,7 +129,7 @@ el número de años, y muestre por pantalla el capital obtenido en la inversión
 Capital final = Capital*(1 + Tasa de interés)^Tiempo
 """
 
-print ('\n *** EJERCICIO 9 ***')
+print('\n *** EJERCICIO 9 ***')
 cantidad = float(input('Cantidad a invertir: '))
 interes_anual = float(input('Interes anual (%): '))
 years = int(input('Años de inversion: '))
