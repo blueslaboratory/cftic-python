@@ -90,8 +90,8 @@ en metros, elevada al cuadrado (kg/m^2)
 """
 
 print ('\n *** EJERCICIO 7 ***')
-masa = float(input('Introduce tu masa corporal (kg): '))
-estatura = float(input('Introduce tu estatura (m): '))
+masa = float(input('Masa corporal (kg): '))
+estatura = float(input('Estatura (m): '))
 
 IMC = masa/(estatura**2)
 IMC_rounded = round(IMC, 2)
