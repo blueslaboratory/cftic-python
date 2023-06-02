@@ -1,4 +1,6 @@
+# Ejercicios Datos Simples
 # Day 1 - 30/05/2023
+
 
 """
 Ejercicio 1
@@ -33,12 +35,19 @@ print('\n *** EJERCICIO 3 ***')
 nombre = input('Introduce tu nombre: ')
 print('¡Hola ' +nombre +'!')
 
+# Varias soluciones
+print('¡Hola ', nombre, '!', sep='')
+print('¡Hola', nombre, end='!\n')
+print(f'¡Hola {nombre}!')
+print('¡Hola %s!' % nombre)
+print('¡Hola {0}!'.format(nombre))
+
 
 
 """
 Ejercicio 4
-Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética:
-((3+2)/(2*5))^2
+Escribir un programa que muestre por pantalla el resultado de la siguiente operación 
+aritmética: ((3+2)/(2*5))^2
 """
 
 print('\n *** EJERCICIO 4 ***')
@@ -49,15 +58,16 @@ print('El resultado es:', operacion)
 
 """
 Ejercicio 5
-Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora.
-Después debe mostrar por pantalla la paga que le corresponde.
+Escribir un programa que pregunte al usuario por el número de horas trabajadas y el 
+coste por hora. Después debe mostrar por pantalla la paga que le corresponde.
 """
 
 print('\n *** EJERCICIO 5 ***')
-horas = input('Introduce las horas trabajadas: ')
+horas = int(input('Introduce las horas trabajadas: '))
 satoshisPorHora = float(input('Introduce tu precio por hora (丰):' ))
-print('Paga correspondiente concatenacion: ' +str(int(horas) * int(satoshisPorHora)))
-print('Paga correspondiente con coma: ', int(horas) * int(satoshisPorHora))
+paga = horas*satoshisPorHora
+print('Paga correspondiente concatenacion: ' +str(paga))
+print('Paga correspondiente con coma: ', paga)
 
 
 
@@ -71,9 +81,9 @@ suma = n(n+1)/2
 
 print('\n *** EJERCICIO 6 ***')
 n = int(input('Introduce un entero positivo: '))
-# division entera
+# division entera 1
 suma = int(n*(n+1)/2)
-# division entera
+# division entera 2
 suma = n*(n+1)//2
 print('Suma de los primeros enteros positivos de 1 hasta ' +str(n) +': ' +str(suma))
 
@@ -126,18 +136,15 @@ Ejercicio 9
 Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y
 el número de años, y muestre por pantalla el capital obtenido en la inversión.
 
-Capital final = Capital*(1 + Tasa de interés)^Tiempo
+Capital final = Capital*(1 + Tasa de interés/100)^Tiempo
 """
 
 print('\n *** EJERCICIO 9 ***')
 cantidad = float(input('Cantidad a invertir: '))
-interes_anual = float(input('Interes anual (%): '))
+interes = float(input('Interes anual (%): '))
 years = int(input('Años de inversion: '))
 
-# Convertir el interes a decimal
-interes_decimal = interes_anual/100  
-
-capital = cantidad*(1+interes_decimal)**years
+capital = cantidad*(1+interes/100)**years
 
 print('El capital obtenido en la inversion es: ', capital)
 

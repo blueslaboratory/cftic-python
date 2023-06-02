@@ -1,4 +1,5 @@
 # Ejercicios de Cadenas
+# Day 2 - 31/05/2023
 
 
 '''
@@ -23,15 +24,18 @@ la primera letra del nombre y de los apellidos en mayúscula. El usuario puede
 introducir su nombre combinando mayúsculas y minúsculas como quiera.
 '''
 print('\n *** EJERCICIO 2 ***')
-nombre = input('Nombre completo: ').lower() + '\n'
+nombre = input('Nombre completo: ')
 
 print('Nombre en minusculas: ')
-print(nombre*3)
+print(nombre.lower())
 print('Nombre en mayusculas: ')
 print(nombre.upper())
 print('Nombre con iniciales en mayusculas: ')
 print(nombre.title())
 
+# En una linea
+print('\nEn una linea: ')
+print(nombre.lower(), nombre.upper(), nombre.title(), sep='\n')
 
 
 '''
@@ -171,13 +175,13 @@ costeTotal = precioUnitario * unidades
 cadenaFinal = f'Producto: {producto}\n'
 
 cadenaFinal += f'Precio unitario con 0s: {precioUnitario:06.2f}\n'
-cadenaFinal += f'Precio unitario: {precioUnitario:06.2f}\n'
+cadenaFinal += f'Precio unitario: {precioUnitario:6.2f}\n'
 
 cadenaFinal += f'Unidades con 0s: {unidades:03d}\n'
-cadenaFinal += f'Unidades: {unidades:03d}\n'
+cadenaFinal += f'Unidades: {unidades:3d}\n'
 
 cadenaFinal += f'Coste total con 0s: {costeTotal:08.2f}\n'
-cadenaFinal += f'Coste total: {costeTotal:08.2f}'
+cadenaFinal += f'Coste total: {costeTotal:8.2f}'
 
 
 print(cadenaFinal)

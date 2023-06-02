@@ -1,4 +1,5 @@
 # Ejercicios de Condicionales
+# Day 4 - 02/06/2023
 
 '''
 Ejercicio 1
@@ -6,11 +7,14 @@ Escribir un programa que pregunte al usuario su edad y muestre por pantalla si e
 mayor de edad o no.
 '''
 print('\n*** EJERCICIO 1 ***')
+
 edad = int(input('Edad: '))
-if edad>=18:
+if (edad>=18):
 	print('Mayor de edad')
 else:
 	print('Menor de edad')
+
+
 
 '''
 Ejercicio 2
@@ -20,6 +24,7 @@ introducida por el usuario coincide con la guardada en la variable sin tener en
 cuenta mayúsculas y minúsculas.
 '''
 print('\n*** EJERCICIO 2 ***')
+
 flag = False
 pw = 'qwerty'
 pwUser = input('Password: ')
@@ -40,6 +45,15 @@ Si el divisor es cero el programa debe mostrar un error.
 '''
 print('\n*** EJERCICIO 3 ***')
 
+n1 = float(input('Numero 1: '))
+n2 = float(input('Numero 2: '))
+
+if (n2 == 0):
+	print('Error: divisor 0')
+else:
+	print('Resultado:', str(n1/n2))
+
+
 
 '''
 Ejercicio 4
@@ -47,6 +61,13 @@ Escribir un programa que pida al usuario un número entero y muestre por pantall
 es par o impar.
 '''
 print('\n*** EJERCICIO 4 ***')
+
+n = int(input('Numero entero: '))
+if (n%2 == 0):
+	print('Par')
+else:
+	print('Impar')
+
 
 
 '''
@@ -58,6 +79,16 @@ tiene que tributar o no.
 '''
 print('\n*** EJERCICIO 5 ***')
 
+edad = int(input('Edad: '))
+ingresos = float(input('Ingresos mensuales: '))
+tributa = False
+
+if(edad>=16 and ingresos >= 1000):
+	tributa = True
+
+print('Tributar: ', tributa)
+
+
 
 '''
 Ejercicio 6
@@ -68,6 +99,23 @@ Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pan
 el grupo que le corresponde.
 '''
 print('\n*** EJERCICIO 6 ***')
+
+sexo = input('Sexo (M/F): ')
+nombre = input('Nombre: ')
+
+if(sexo.lower() == 'f'):
+	if(nombre[0].upper()<='M'):
+		print('Grupo A: mujer')
+	else:
+		print('Grupo B: mujer')
+elif(sexo.lower() == 'm'):
+	if (nombre[0].upper() >= 'N'):
+		print('Grupo A: hombre')
+	else:
+		print('Grupo B: hombre')
+else:
+	print('Genero no reconocido')
+
 
 
 '''
@@ -87,7 +135,25 @@ el tipo impositivo que le corresponde.
 '''
 print('\n*** EJERCICIO 7 ***')
 
+rentaAnual = float(input('Renta anual: '))
+tipo = 5
 
+if(rentaAnual<10000):
+	tipo = 5
+elif(rentaAnual>=10000 and rentaAnual<20000):
+	tipo = 15
+elif(rentaAnual>=20000 and rentaAnual<35000):
+	tipo = 20
+elif(rentaAnual>=35000 and rentaAnual<60000):
+	tipo = 30
+if(rentaAnual>=60000):
+	tipo = 45
+
+print('Tipo impositivo:', tipo, '%')
+
+
+
+# ME QUEDO POR AQUI
 '''
 Ejercicio 8
 En una determinada empresa, sus empleados son evaluados al final de cada año. 
@@ -109,6 +175,8 @@ rendimiento, así como la cantidad de dinero que recibirá el usuario.
 print('\n*** EJERCICIO 8 ***')
 
 
+
+
 '''
 Ejercicio 9
 Escribir un programa para una empresa que tiene salas de juegos para todas las 
@@ -118,6 +186,8 @@ mostrar el precio de la entrada. Si el cliente es menor de 4 años puede entrar
 gratis, si tiene entre 4 y 18 años debe pagar 5€ y si es mayor de 18 años, 10€.
 '''
 print('\n*** EJERCICIO 9 ***')
+
+
 
 
 '''
@@ -133,5 +203,4 @@ para que elija. Solo se puede elegir un ingrediente además de la mozzarella y e
 tomate que están en todas las pizzas. Al final se debe mostrar por pantalla si 
 la pizza elegida es vegetariana o no y todos los ingredientes que lleva.
 '''
-
 print('\n*** EJERCICIO 10 ***')

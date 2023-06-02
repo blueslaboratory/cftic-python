@@ -1,10 +1,12 @@
 # Day 0 - 30/05/2023
 
 """
-Pycharm
+PYCHARM SHORTCUTS:
+
 CTRL + ALT + S: Cambiar el interprete de Python
 CTRL + SHIFT + F10: Runear el codigo
-Ctrl + ALT + SHIFT + L: Formatear
+CTRL + ALT + SHIFT + L: Formatear
+CTRL + /: Comentar y descomentar
 """
 
 
