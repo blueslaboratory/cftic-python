@@ -1,4 +1,4 @@
-# 01/06/2023
+# Day 3 - 01/06/2023
 
 print('\n*** for del 0-9: 10 numeros ***')
 for item in range(10):
