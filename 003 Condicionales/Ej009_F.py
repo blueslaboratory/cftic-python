@@ -12,3 +12,19 @@ gratis, si tiene entre 4 y 18 años debe pagar 5€ y si es mayor de 18 años, 1
 
 print('\n*** EJERCICIO 9 ***')
 
+
+
+
+
+print('\n*** EJERCICIO 9 - SOLUCION PROFE ***')
+
+edad = int(input("Dame edad:"))
+
+if edad < 4:
+    precio = 0
+elif edad < 18:
+    precio = 5
+else:
+    precio = 10
+
+print("Tienes que pagar ", precio, "€", sep='')

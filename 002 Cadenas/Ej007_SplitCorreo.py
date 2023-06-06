@@ -15,3 +15,14 @@ correo = input('Correo (e.g. blueslaboratory@labs.com): ')
 correoList = correo.split('@')
 
 print(correoList[0] +'@' +'ceu.es')
+
+
+
+print('\n *** EJERCICIO 7 - SOLUCION PROFE***')
+
+correo = input("Correo:")
+
+correo_sin_dominio = correo[:correo.find('@')]
+correo = correo_sin_dominio + "@ceu.es"
+
+print("Correo:" + correo)

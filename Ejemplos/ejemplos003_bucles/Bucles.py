@@ -43,3 +43,11 @@ for item in range(10):
 	print(item)
 
 
+print('\n*** while ***')
+flag = True
+
+while (flag == True):
+	print('Mi primerito while')
+	flag = False
+
+print('Me voy de la vida')

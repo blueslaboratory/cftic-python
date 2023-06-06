@@ -13,3 +13,14 @@ precioSplit = precio.split('.')
 
 print('Euros:', precioSplit[0])
 print('Centimos:', precioSplit[1])
+
+
+
+print('\n *** EJERCICIO 8 - SOLUCION PROFE ***')
+precio = input("Precio (con dos decimales): ")
+
+euros = precio[:precio.find('.')]
+centimos = precio[precio.find('.')+1:]
+
+print("Euros:", euros)
+print("Centimos:", centimos)

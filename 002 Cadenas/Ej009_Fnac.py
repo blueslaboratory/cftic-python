@@ -19,3 +19,29 @@ print('Fecha de nacimiento introducida: '
         +'\n\tDia:', dd
 		+'\n\tMes:', mm
 		+'\n\tYear:', aaaa)
+
+
+
+print('\n *** EJERCICIO 9 - SOLUCION PROFE ***')
+fecha_nacimiento = input("Fecha nacimiento: ")
+
+dia = fecha_nacimiento[:fecha_nacimiento.find('/')]
+mes = fecha_nacimiento[fecha_nacimiento.find('/')+1:fecha_nacimiento.find('/', fecha_nacimiento.find('/')+1)]
+anyo = fecha_nacimiento[fecha_nacimiento.find('/', fecha_nacimiento.find('/')+1)+1:]
+
+print("Dia:" + dia)
+print("Mes:" + mes)
+print("Anyo:" + anyo)
+
+
+##Otra solucion
+print('\n *** EJERCICIO 9 - OTRA SOLUCION PROFE ***')
+posicion = fecha_nacimiento.find('/')
+print("Dia:" + fecha_nacimiento[:posicion])
+
+fecha_nacimiento = fecha_nacimiento[posicion+1:]
+posicion =fecha_nacimiento.find('/')
+print("Mes:" + fecha_nacimiento[:posicion])
+
+fecha_nacimiento = fecha_nacimiento[posicion+1:]
+print("Anyo:" + fecha_nacimiento)

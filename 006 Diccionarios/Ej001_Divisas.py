@@ -23,9 +23,14 @@ divisa = input('Buscar divisa: ')
 # simbolo = diccionarioDivisas[divisa.lower().capitalize()]
 simbolo = diccionarioDivisas.get(divisa.lower().capitalize())
 
+# Miramos si la variable no esta vacia
+# True: variable definida + cualquier valor, 1
+# False: None, o variable vacia '', 0
+
+# simbolo=''
+# print(str(simbolo))
 
 if (simbolo):
 	print('Existe:', simbolo)
 else:
 	print('No existe', divisa)
-

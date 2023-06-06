@@ -15,3 +15,15 @@ frase = input('Frase: ')
 vocal = input('Vocal: ')
 
 print(frase.replace(vocal, vocal.upper()))
+
+
+
+print('\n *** EJERCICIO 6 - OTRA SOLUCION PROPUESTA PROFE ***')
+
+frase = input("Frase:")
+vocal = input("Vocal:")
+
+partes = frase.split(vocal)
+frase = vocal.upper().join(partes)
+
+print("Frase modificada:" + frase)

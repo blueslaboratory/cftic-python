@@ -15,3 +15,12 @@ telefono = input('Telefono (formato: prefix-nº-extension, e.g. +34-913146921-55
 # Elemento del ultimo numero sin extension: 13
 print('Telefono sin extension: ', telefono[4:13])
 
+
+
+print('\n *** EJERCICIO 4 - SOLUCION PROFE ***')
+numero_telefono = input("Dame numero teléfono (+pp-nnnnnnnnn-ee):")
+
+
+print("Prefijo:" + numero_telefono[:3])
+print("Numero:" + numero_telefono[4:-3])
+print("Extension:" + numero_telefono[-3:])
