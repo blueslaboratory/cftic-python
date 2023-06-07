@@ -14,12 +14,13 @@ un triángulo rectángulo como el de más abajo.
 9 7 5 3 1
 '''
 
-print('*** EJERCICIO 8 ***')
+print('\n*** EJERCICIO 8 - SOLUCION PROFE ***')
 
-numero = int(input('Numero entero: '))
-base = ''
+numero = int(input("Dame numero entero positivo: "))
 
-print('\nTriangulo rectangulo')
-for i in range(1, altura+1):
-	base += '*'
-	print('Fila', i, ':\t', base)
+# impares
+for i in range(1, numero+1, 2):
+	# cuenta atras
+	for j in range(i, 0, -2):
+		print(str(j), end=" ")
+	print("")

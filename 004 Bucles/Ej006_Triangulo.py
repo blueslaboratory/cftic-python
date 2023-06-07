@@ -13,7 +13,7 @@ un triángulo rectángulo como el de más abajo, de altura el número introducid
 *****
 '''
 
-print('*** EJERCICIO 6 ***')
+print('\n*** EJERCICIO 6 ***')
 
 altura = int(input('Altura: '))
 base = ''
@@ -22,3 +22,12 @@ print('\nTriangulo rectangulo de', altura, 'plantas de altura')
 for i in range(1, altura+1):
 	base += '*'
 	print('Fila', i, ':\t', base)
+
+
+
+print('\n*** EJERCICIO 6 - SOLUCION PROFE ***')
+
+numero = int(input("Dame numero entero positivo:"))
+cadena = "&"
+for i in range(1,numero+1):
+    print(cadena*i)

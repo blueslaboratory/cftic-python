@@ -24,10 +24,58 @@ for asignatura in asignaturas:
 # 1º Forma de hacer el for:
 print('\n1. Tus notas son: ')
 for asignatura in asignaturas:
-	print(asignatura +':' +str(notas[i]))
+	print(asignatura +': ' +str(notas[i]))
 	i+=1
 
 # 2º Forma de hacer el for:
 print('\n2. Tus notas son: ')
 for i in range(len(asignaturas)):
-    print("En la asignatura " +asignaturas[i] +" has sacado: " +str(notas[i]))
+	print("En la asignatura " +asignaturas[i] +" has sacado: " +str(notas[i]))
+
+
+
+
+#################################################################
+# Otra forma
+#################################################################
+
+print('\n*** EJERCICIO 3 - OTRA SOLUCION ***')
+print('ID sin concatenacion: mejor rendimiento')
+
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+notas = []
+
+for asignatura in asignaturas:
+    nota = input("¿Qué nota has sacado en " + asignatura + "? ")
+    notas.append(nota)
+    print(id(notas))
+print(type(enumerate(asignaturas)))
+
+for index,asignatura in enumerate(asignaturas):
+    print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])
+
+
+
+
+#################################################################
+# Otra forma
+#################################################################
+
+# CASTEO: CONVERTIR STRING A LISTA
+
+print('\n*** EJERCICIO 3 - OTRA SOLUCION 2 ***')
+print('ID con concatenacion: peor rendimiento')
+
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+notas = []
+
+for asignatura in asignaturas:
+    nota = input("¿Qué nota has sacado en " + asignatura + "? ")
+    # Convierte nota que es str a un elemento de lista
+    notas = notas + [nota]
+    print(id(notas))
+
+print(type(enumerate(asignaturas)))
+
+for index,asignatura in enumerate(asignaturas):
+    print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])

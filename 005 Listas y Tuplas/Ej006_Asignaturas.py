@@ -33,3 +33,21 @@ print('len(notas): ', len(notas))
 print('\nDebes repetir: ')
 for i in range(len(asignaturasSuspensas)):
 	print(asignaturasSuspensas[i], ': ', notas[i])
+
+
+
+
+#################################################################
+# Otra manera
+#################################################################
+print('\n*** EJERCICIO 6 - OTRA FORMA ***')
+
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+asignaturasSuspendidas = [];
+
+for asignatura in asignaturas:
+    nota = int(input("Nota en la asignatura " + asignatura +":"))
+    if nota < 5:
+        asignaturasSuspendidas.append(asignatura)
+
+print("Asignaturas suspendidas "+str(asignaturasSuspendidas))

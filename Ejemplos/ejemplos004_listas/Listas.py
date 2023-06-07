@@ -71,3 +71,13 @@ else:
 print('-----------------------')
 for index in range(1,10,2):
 	print(index)
+
+
+# 07/06/2023
+# Convertir una lista en un diccionario con enumerate
+print('\n*** lista a diccionario: enumerate ***')
+numeros = [0,1,2,3,4,5,6,7,8,9]
+for id, item in enumerate(numeros):
+	print(id, item)
+
+
