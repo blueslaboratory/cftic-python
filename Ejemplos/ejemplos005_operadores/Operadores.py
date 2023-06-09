@@ -129,3 +129,16 @@ resultado = 'c' not in diccionario  # True
 
 # Operador in con cadena
 resultado = 'a' in cadena  # True
+
+
+
+# 09/06/2023
+print('\n *** 7.Operador Ternario ***')
+def mayor0():
+	print('Numero mayor que 0')
+def menorIgual0():
+	print('Numero menor que 0')
+
+numero = int(input('Numero: '))
+
+mayor0() if numero>0 else menorIgual0()

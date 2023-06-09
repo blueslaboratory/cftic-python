@@ -1,5 +1,7 @@
 # Day 5 - 05/06/2023
 
+# Los conjuntos no tienen duplicados, si metes un valor duplicado pasa de ti
+
 print('\n*** Listas vs Tuplas vs Diccionarios vs Sets ***')
 myLista = [69, 5.5, 'hola']
 myTupla = (96, 7.7, 'adios')
@@ -46,6 +48,11 @@ print(intersect)
 print('\n*** Sets: difference ***')
 difference = mySet0.difference(mySet1)
 print(difference)
+
+
+print('\n*** Sets: subset ***')
+isSubset = mySet0.issubset(mySet1)
+print('mySet0 es subset de mySet1:', isSubset)
 
 
 print('\n*** Sets: symmetric difference ***')
