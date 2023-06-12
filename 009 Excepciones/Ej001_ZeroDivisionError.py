@@ -7,6 +7,8 @@ La función debe manejar la excepción en caso de que se proporcione un divisor
 igual a cero y devolver un mensaje de error adecuado.
 '''
 
+print('\n*** EJERCICIO 1 ***')
+
 def dividir(n1, n2):
 	try:
 		return n1/n2

@@ -13,6 +13,7 @@ Escribe una función llamada convertir_a_entero que reciba un valor y lo convier
 a entero. La función debe manejar la excepción en caso de que el valor no sea 
 numérico y devolver un mensaje de error adecuado.
 '''
+
 '''
 Ejercicio 3 Acceso a elementos de una lista
 Escribe una función llamada obtener_elemento que reciba una lista y un índice y 
