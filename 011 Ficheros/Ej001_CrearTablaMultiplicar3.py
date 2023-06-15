@@ -39,7 +39,7 @@ def crear_fichero(num):
 
 
 def pedir_numero():
-	numero = int(input('Dame número: '))
+	numero = int(input('Dame numero: '))
 	return numero
 
 

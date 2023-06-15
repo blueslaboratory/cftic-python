@@ -7,6 +7,10 @@ CTRL + ALT + S: Cambiar el interprete de Python
 CTRL + SHIFT + F10: Runear el codigo
 CTRL + ALT + SHIFT + L: Formatear
 CTRL + /: Comentar y descomentar
+
+CONECTOR MYSQL:
+pip uninstall mysql-connector-python
+pip install mysql-connector-python
 """
 
 
