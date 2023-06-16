@@ -26,3 +26,5 @@ for dato in datos:
 	print("Se han insertado", cursor.rowcount, 'registros')
 	cursor.reset()
 	print(datos)
+
+# myDB.commit()
