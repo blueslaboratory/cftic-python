@@ -17,7 +17,6 @@ if __name__ == '__main__':
 		# Ej001_AlmacenarInformacion.AlmacenarInformacion.almacenar_persona(nombre_fichero)
 
 		# Para cuando importas la clase:
-		# se hace asi porque no hay metodos estaticos, tienes que crear el objeto
 		almacenarInformacion = AlmacenarInformacion()
 		# AlmacenarInformacion.almacenar_persona(nombre_fichero)
 		almacenarInformacion.almacenar_persona('datos.csv')
