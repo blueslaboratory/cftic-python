@@ -26,8 +26,8 @@ ventana.title('Ejercicio 4 - Mensaje de Alerta')
 ventana.geometry('270x100')
 
 # Etiqueta 0
-etiqueta0 = tk.Label(ventana, text='Ingresa un texto:')
-etiqueta0.pack()
+etiqueta = tk.Label(ventana, text='Ingresa un texto:')
+etiqueta.pack()
 
 # Cuadro
 cuadro = tk.Entry(ventana)

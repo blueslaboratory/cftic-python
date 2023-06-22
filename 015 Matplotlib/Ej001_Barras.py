@@ -21,6 +21,7 @@ plt.bar(meses, ventas)
 
 # Personalizar el grafico
 plt.title(f'Ventas de {meses[0]} - {meses[len(meses)-1]}')
+# plt.title(f'Ventas de {meses[0]} - {meses[len(meses)-1]}', loc='left')
 plt.xlabel('Meses')
 plt.ylabel('Ventas') 
 

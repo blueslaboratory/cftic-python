@@ -27,6 +27,25 @@ print('\n*** PRIMERAS 5 FILAS: DATOS 0 ***')
 print(df.head(5))
 
 
+print('\n*** ULTIMAS 5 FILAS: DATOS 0 ***')
+print(df.tail(5))
+
+print('\n*** SLICING 7 PRIMEROS: DATOS 0 ***')
+print(df[:7])
+
+print('\n*** SLICING 7 ULTIMOS ORDEN NATURAL: DATOS 0 ***')
+print(df[-7:])
+
+print('\n*** SLICING 7 ULTIMOS ORDEN INVERSO: DATOS 0 ***')
+print(df[-1:-8:-1])
+
+print('\n*** PARES: DATOS 0 ***')
+print(df[::2])
+
+print('\n*** LISTA AL REVES: DATOS 0 ***')
+print(df[::-1])
+
+
 print('\n*** ILOC ***')
 # dataframe.iloc[filas, columnas]
 # Acceder a una fila específica por su índice

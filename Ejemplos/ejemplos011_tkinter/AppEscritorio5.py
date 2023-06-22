@@ -7,6 +7,10 @@ from tkinter import filedialog as fd
 
 
 # funciones
+# Importante tiene un parametro que es el evento
+def button_second_click(event):
+    print('Has pulsado el boton derecho')
+
 def mostrar_mensaje():
     messagebox.showinfo('Mensaje', 'Mi mensaje')
     
@@ -70,8 +74,14 @@ frm.grid(column=10,row=10)
 # label
 ttk.Label(frm, text="Hello World!").grid(column=3, row=0)
 
+
 # buttons
-ttk.Button(frm, text="Quit", command=v_ppal.destroy).grid(column=6, row=5)
+# Si pulsas sobre con el boton derecho del raton llama a: button_second_click
+# e imprime por consola: Has pulsado el boton derecho
+btn = ttk.Button(frm, text="Quit", command=v_ppal.destroy).grid(column=6, row=5)
+btn.bind("<Button-3>", button_second_click)
+
+# ttk.Button(frm, text="Quit", command=v_ppal.destroy).grid(column=6, row=5)
 ttk.Button(frm, text="Mostrar Mensaje", command=mostrar_mensaje).grid(column=2, row=1)
 ttk.Button(frm, text="Mostrar Warning", command=mostrar_warning).grid(column=2, row=2)
 ttk.Button(frm, text="Mostrar Error", command=mostrar_error).grid(column=2, row=3)

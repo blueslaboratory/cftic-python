@@ -23,6 +23,7 @@ for mes in meses:
 
 # Crear el grafico de barras
 plt.bar(meses, ventas)
+# plt.bar(meses, ventas, align='center')
 
 # Personalizar el grafico
 plt.title(f'Ventas de {meses[0]} - {meses[len(meses)-1]}')

@@ -1,5 +1,6 @@
 # Day 17 - 21/06/2023
 # Ejercicios Libreria Matplotlib.docx
+# pip install matplotlib
 
 '''
 Ejercicio 1

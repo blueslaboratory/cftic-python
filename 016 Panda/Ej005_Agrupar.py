@@ -27,6 +27,17 @@ print(df.sort_values('Ciudad'))
 
 # Filtrar filas basado en una condición
 # Agrupar 
-print('\n*** DATA FRAME AGRUPAR ***')
+print('\n*** DATA FRAME AGRUPAR 0***')
+# df_agrupado = df.groupby('Ciudad').size().reset_index(name='Total')
 df_agrupado = df.groupby('Ciudad').size()
+print(df_agrupado)
+
+
+print('\n*** DATA FRAME AGRUPAR 1***')
+df_agrupado = df.groupby('Ciudad').count()
+print(df_agrupado)
+
+
+print('\n*** DATA FRAME AGRUPAR 2***')
+df_agrupado = df.groupby('Ciudad')['Edad'].mean().reset_index(name='Media Edad')
 print(df_agrupado)

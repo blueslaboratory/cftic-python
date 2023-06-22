@@ -13,7 +13,10 @@ from functools import partial
 
 
 def cambiarColor(color):
+    # Opcion 1:
     ventana.config(bg=color)
+    # Opcion 2:
+    # ventana['bg']=color
 
 
 # Ventana
@@ -23,14 +26,15 @@ ventana.title('Ejercicio 5 - Colores')
 # Size
 ventana.geometry('240x100')
 
-# Botones
-botonRed = tk.Button(ventana, text='RED', command=lambda:cambiarColor('red'))
+# Botones con lambda
+botonRed = tk.Button(ventana, text='RED', command=lambda:cambiarColor('red')) #FF0000
 botonRed.grid(row=0, column=0, padx=10, pady=10)
 
-botonRed = tk.Button(ventana, text='GREEN', command=lambda:cambiarColor('green'))
+botonRed = tk.Button(ventana, text='GREEN', command=lambda:cambiarColor('#00FF00')) #green
 botonRed.grid(row=0, column=1, padx=10, pady=10)
 
-botonRed = tk.Button(ventana, text='BLUE', command=partial(cambiarColor,'blue'))
+# Botones con partial
+botonRed = tk.Button(ventana, text='BLUE', command=partial(cambiarColor,'blue')) #0000FF
 botonRed.grid(row=0, column=2, padx=10, pady=10)
 
 botonRed = tk.Button(ventana, text='PINK', command=partial(cambiarColor,'pink'))
