@@ -21,5 +21,3 @@ if(pw == pwUser.lower()):
 
 if(flag):
 	print('Las passwords coinciden')
-
-

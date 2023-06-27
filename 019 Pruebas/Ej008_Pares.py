@@ -11,11 +11,13 @@ Escribe una función sumar_pares(n: int) -> int que sume todos los números pare
 desde 1 hasta n (incluyendo n si es par).
 '''
 
-# SOLUCION PROFE
+# SOLUCION PROFE: CORREGIDO EN CLASE
+
 import unittest
 
 
 def sumar_pares0(n: int) -> int:
+
 	numeros_pares = []
 
 	for num in range(1, n+1):
@@ -36,6 +38,20 @@ class PruebasSumarPares(unittest.TestCase):
 		self.assertEqual(sumar_pares0(15), 56) # 14,0,12,2,10,4,8,6 --> 14*4
 		self.assertEqual(sumar_pares(10), 30)
 		self.assertEqual(sumar_pares(15), 56)
+
+	def test_sumar_pares_sin_pares(self):
+		self.assertEqual(sumar_pares(1), 0)
+
+	def test_sumar_pares_cadena_numerica(self):
+		self.assertEqual(sumar_pares0('2'), 2)
+
+	def test_sumar_pares_excepcion0(self):
+		with self.assertRaises(TypeError):
+			sumar_pares0('a')
+
+	def test_sumar_pares_excepcion1(self):
+		with self.assertRaises(ValueError):
+			sumar_pares0()
 
 
 # Para ejecutar el Test en este cuaderno

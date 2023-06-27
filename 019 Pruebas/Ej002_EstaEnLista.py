@@ -12,20 +12,31 @@ elemento y una lista, y devuelva True si el elemento está presente en la lista,
 y False en caso contrario. Escribe una prueba unitaria para esta función.
 '''
 
-# SOLUCION PROFE
+# SOLUCION PROFE: CORREGIDO EN CLASE
 
 import unittest
 
+
 def esta_en_lista(elemento, lista):
-    return elemento in lista
+	try:
+		return elemento in lista
+	except TypeError:
+		return False
+	except: #except BaseException
+		return False
 
 
 class TestEstaEnLista(unittest.TestCase):
-    def test_esta_en_lista(self):
-        self.assertTrue(esta_en_lista(3, [1, 2, 3, 4, 5]))
-        self.assertFalse(esta_en_lista(6, [1, 2, 3, 4, 5]))
-        self.assertTrue(esta_en_lista('a', ['a', 'b', 'c']))
-        self.assertFalse(esta_en_lista('d', ['a', 'b', 'c']))
+	lista = [1,2,3,4,5]
+
+	def test_esta_en_lista(self):
+		self.assertTrue(esta_en_lista(3, [1, 2, 3, 4, 5]))
+		self.assertFalse(esta_en_lista(6, self.lista))
+		self.assertTrue(esta_en_lista('a', ['a', 'b', 'c']))
+		self.assertFalse(esta_en_lista('d', ['a', 'b', 'c']))
+
+	def test_no_esta_en_lista(self):
+		self.assertEqual(esta_en_lista(7, self.lista), False)
 
 
 # Para ejecutar el Test en este cuaderno
@@ -40,4 +51,4 @@ result = runner.run(suite)
 
 #Para ejecutarlo en un proyecto
 #if __name__ == '__main__':
-#    unittest.main()
+#    unittest.main(verbosity=2)

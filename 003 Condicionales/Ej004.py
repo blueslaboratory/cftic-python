@@ -10,6 +10,7 @@ es par o impar.
 print('\n*** EJERCICIO 4 ***')
 
 n = int(input('Numero entero: '))
+
 if (n%2 == 0):
 	print('Par')
 else:

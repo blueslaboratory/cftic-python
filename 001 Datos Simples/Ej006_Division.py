@@ -11,11 +11,15 @@ suma = n(n+1)/2
 """
 
 print('\n *** EJERCICIO 6 ***')
+
 n = int(input('Introduce un entero positivo: '))
+
 # division entera 1
 suma = int(n*(n+1)/2)
+
 # division entera 2
 suma = n*(n+1)//2
+
 print('Suma de los primeros enteros positivos de 1 hasta ' +str(n) +': ' +str(suma))
 
 

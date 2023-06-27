@@ -20,8 +20,8 @@ print(frase.replace(vocal, vocal.upper()))
 
 print('\n *** EJERCICIO 6 - OTRA SOLUCION PROPUESTA PROFE ***')
 
-frase = input("Frase:")
-vocal = input("Vocal:")
+frase = input("Frase: ")
+vocal = input("Vocal: ")
 
 partes = frase.split(vocal)
 frase = vocal.upper().join(partes)

@@ -12,7 +12,8 @@ radio de un círculo y devuelva el área correspondiente. Escribe una prueba uni
 para esta función, verificando si el resultado es igual a 50.265 aproximadamente.
 '''
 
-# SOLUCION PROFE
+# SOLUCION PROFE: CORREGIDO EN CLASE
+
 
 import unittest
 import math
@@ -39,4 +40,4 @@ result = runner.run(suite)
 
 # Para ejecutarlo en un proyecto
 # if __name__ == '__main__':
-#    unittest.main()
+# 	unittest.main(verbosity=2)

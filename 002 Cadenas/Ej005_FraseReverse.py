@@ -10,6 +10,8 @@ muestre por pantalla la frase invertida.
 print('\n *** EJERCICIO 5 ***')
 
 frase = input('Frase: ')
+
+# Forma 1
 print('\nForma 1:')
 print('Frase reverse: ', frase[::-1])
 
@@ -20,10 +22,6 @@ print('\nForma 2:')
 print('Frase reverse: ', ''.join(reversed(frase)))
 
 
-
-# Forma 3
-print('\nForma 3:')
-fraseInvertida = ''
 
 
 '''
@@ -41,13 +39,17 @@ debe continuar hasta el índice 0 (el primer elemento de la secuencia).
 decrementa en 1, lo que permite recorrer la secuencia en sentido inverso.
 '''
 
+# Forma 3: Letra a letra
+print('\nForma 3:')
+fraseInvertida = ''
+
 for i in range(len(frase)-1, -1, -1):
 	fraseInvertida += frase[i]
 	print(i, frase[i], fraseInvertida)
 
 
 
-# Letra a letra
+# Forma 1: Letra a letra
 print('\nForma 1 - Letra a letra:')
 fraseNoInvertida = ''
 
@@ -57,6 +59,7 @@ for i in range(len(frase)):
 
 
 
+# Forma 2: Letra a letra
 print('\nForma 2 - Letra a letra:')
 fraseNoInvertida = ''
 

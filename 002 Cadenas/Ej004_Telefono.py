@@ -9,7 +9,9 @@ donde el prefijo es el código del país +34, y la extensión tiene dos dígitos
 teléfono con este formato y muestre por pantalla el número de teléfono sin el
 prefijo y la extensión.
 '''
+
 print('\n *** EJERCICIO 4 ***')
+
 telefono = input('Telefono (formato: prefix-nº-extension, e.g. +34-913146921-55): ')
 # Elemento del primer numero sin prefijo: 4
 # Elemento del ultimo numero sin extension: 13
@@ -21,6 +23,6 @@ print('\n *** EJERCICIO 4 - SOLUCION PROFE ***')
 numero_telefono = input("Dame numero teléfono (+pp-nnnnnnnnn-ee):")
 
 
-print("Prefijo:" + numero_telefono[:3])
-print("Numero:" + numero_telefono[4:-3])
-print("Extension:" + numero_telefono[-3:])
+print("Prefijo: " + numero_telefono[:3])
+print("Numero: " + numero_telefono[4:-3])
+print("Extension: " + numero_telefono[-3:])

@@ -10,6 +10,7 @@ Capital final = Capital*(1 + Tasa de interés/100)^Tiempo
 """
 
 print('\n *** EJERCICIO 9 ***')
+
 cantidad = float(input('Cantidad a invertir: '))
 interes = float(input('Interes anual (%): '))
 years = int(input('Años de inversion: '))

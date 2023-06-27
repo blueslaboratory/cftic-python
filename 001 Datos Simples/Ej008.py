@@ -10,6 +10,7 @@ entera respectivamente.
 """
 
 print('\n *** EJERCICIO 8 ***')
+
 n1 = int(input('Numero entero 1: '))
 n2 = int(input('Numero entero 2: '))
 

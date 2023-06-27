@@ -8,10 +8,12 @@ que el usuario lo introduzca muestre por pantalla <NOMBRE> tiene <n> letras,
 donde <NOMBRE> es el nombre de usuario en mayúsculas y <n> es el número de letras
 que tienen el nombre.
 '''
+
 print('\n *** EJERCICIO 3 ***')
-nombre = input('Nombre: ').upper() + '\n'
-print('Nombre: ' + nombre
-      +'Letras: ' +str(len(nombre)-1))
-print()
+
+nombre = input('Nombre: ').upper()
+
+print('Nombre: ' +nombre)
+print('Letras: ' +str(len(nombre)-1))
 
 

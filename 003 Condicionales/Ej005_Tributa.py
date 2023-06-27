@@ -26,7 +26,7 @@ tributa = False
 # - &
 # - |
 
-if(edad>=16 and ingresos >= 1000):
+if(edad>=16 and ingresos>=1000):
 	tributa = True
 
 print('Tributar:', tributa)
@@ -45,27 +45,31 @@ INGRESO = 1000
 persona = int(input('Por favor, introduce tu edad: '))
 
 if persona >= EDAD:
-    nomina = float(input('Introduce tu ingreso mensual: '))
-    if nomina > INGRESO:
-        print("Este usuario tiene que tributar")
-    else:
-        print('Este usuario no llega al mínimo ingreso')
+
+	nomina = float(input('Introduce tu ingreso mensual: '))
+
+	if nomina > INGRESO:
+		print('Este usuario tiene que tributar')
+	else:
+		print('Este usuario no llega al mínimo ingreso')
+
 else:
-    print("Este usuario no tiene que tributar")
+	print('Este usuario no tiene que tributar')
 
 
 
 
 print('\n*** OPERADOR DE CORTOCIRCUITO: AND ***')
+
 # si pones menor que 15 ya NO EVALUA la siguiente condicion
 if int(input("Dame edad :"))>15 and int(input("Dame ingresos mensuales :"))>1000:
-    print("Tienes que tributar")
+	print("Tienes que tributar")
 else:
-    print("No tienes que tributar")
+	print("No tienes que tributar")
 
 # si pones menor que 15 ya SI EVALUA la siguiente condicion
 print('\n*** OPERADOR: & ***')
 if int(input("Dame edad :"))>15 & int(input("Dame ingresos mensuales :"))>1000:
-    print("Tienes que tributar")
+	print("Tienes que tributar")
 else:
-    print("No tienes que tributar")
+	print("No tienes que tributar")

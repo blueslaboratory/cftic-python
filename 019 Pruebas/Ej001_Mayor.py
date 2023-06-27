@@ -12,6 +12,8 @@ que representa la edad de una persona y devuelva True si es mayor o igual a 18,
 y False en caso contrario. Escribe una prueba unitaria para esta función.
 '''
 
+# SOLUCION PROFE: CORREGIDO EN CLASE
+
 import unittest
 
 
@@ -60,17 +62,25 @@ class TestEsMayorDeEdad(unittest.TestCase):
 		self.assertFalse(es_mayor_de_edad(17.9))
 
 
+class PruebaTestOtra(unittest.TestCase):
+	def test_es_espacio_valor_otro(self):
+		self.assertEqual(es_mayor_de_edad(5), False)
+
+'''
 # Para ejecutar el Test en este cuaderno
 loader = unittest.TestLoader()
 
-suite = loader.loadTestsFromTestCase(TestEsMayorDeEdad)
-# suite = unittest.TestSuite()
-# suite.addTest(loader.loadTestsFromTestCase(TestEsMayorDeEdad))
+# suite = loader.loadTestsFromTestCase(TestEsMayorDeEdad)
+suite = unittest.TestSuite()
+suite.addTest(loader.loadTestsFromTestCase(TestEsMayorDeEdad))
+suite.addTest(loader.loadTestsFromTestCase(PruebaTestOtra))
 
 # verbosity=2 es la recomendada
 runner = unittest.TextTestRunner(verbosity=2)
 result = runner.run(suite)
+'''
 
-# Para ejecutarlo en un proyecto
-# if __name__ == '__main__':
-# 	unittest.main()
+# Para ejecutarlo en un proyecto:
+# ejecutar todas las pruebas del fichero
+if __name__ == '__main__':
+	unittest.main(verbosity=2)

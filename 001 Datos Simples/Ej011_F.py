@@ -10,3 +10,17 @@ la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usu
 Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el
 primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
 """
+
+print('\n *** EJERCICIO 11 ***')
+
+INTERES = 0.04
+capital = int(input('Capital: '))
+
+capital_anio_1 = round((capital + capital * INTERES), 2)
+print('Capital 1:', capital_anio_1)
+
+capital_anio_2 = round((capital_anio_1 + capital_anio_1 * INTERES), 2)
+print('Capital 2:', capital_anio_2)
+
+capital_anio_3 = round((capital_anio_2 + capital_anio_2 * INTERES), 2)
+print('Capital 3:', capital_anio_3)

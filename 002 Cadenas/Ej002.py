@@ -9,7 +9,9 @@ todas las letras minúsculas, otra con todas las letras mayúsculas y otra solo 
 la primera letra del nombre y de los apellidos en mayúscula. El usuario puede
 introducir su nombre combinando mayúsculas y minúsculas como quiera.
 '''
+
 print('\n *** EJERCICIO 2 ***')
+
 nombre = input('Nombre completo: ')
 
 print('Nombre en minusculas: ')

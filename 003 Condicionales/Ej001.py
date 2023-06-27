@@ -10,6 +10,7 @@ mayor de edad o no.
 print('\n*** EJERCICIO 1 ***')
 
 edad = int(input('Edad: '))
+
 if (edad>=18):
 	print('Mayor de edad')
 else:

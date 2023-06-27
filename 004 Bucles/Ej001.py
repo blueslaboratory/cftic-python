@@ -14,6 +14,5 @@ palabra = input('Palabra: ')
 repetir = 1
 
 while (repetir <= 10):
-	print('Repetir -', repetir,
-	      '\tPalabra:', palabra)
+	print('Repetir -', repetir, '\tPalabra:', palabra)
 	repetir += 1

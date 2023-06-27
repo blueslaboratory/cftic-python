@@ -31,14 +31,17 @@ if tipo == "1":
     print("Ingredientes de pizzas vegetarianas\n\t 1- Pimiento\n\t2- Tomate natural\n")
     ingrediente = input("Introduce el ingrediente que deseas: ")
     print("Pizza vegetariana con mozzarella, tomate y ", end="")
+
     if ingrediente == "1":
         print("Pimiento")
     else:
         print("Tomate natural")
+
 else:
     print("Ingredientes de pizzas no vegetarianas\n\t1- Peperoni\n\t2- Jamón\n\t3- Salmón\n")
     ingrediente = input("Introduce el ingrediente que deseas: ")
     print("Pizza no vegetarina con mozarrella, tomate y ", end="")
+
     if ingrediente == "1":
         print("peperoni")
     elif ingrediente == "2":

@@ -7,7 +7,9 @@ Escribir un programa que pregunte por consola el precio de un producto en euros 
 dos decimales y muestre por pantalla el número de euros y el número de céntimos del
 precio introducido.
 '''
+
 print('\n *** EJERCICIO 8 ***')
+
 precio = input('Precio producto (€) con 2 decimales (e.g. 69.77€): ')
 precioSplit = precio.split('.')
 
@@ -17,10 +19,11 @@ print('Centimos:', precioSplit[1])
 
 
 print('\n *** EJERCICIO 8 - SOLUCION PROFE ***')
+
 precio = input("Precio (con dos decimales): ")
 
 euros = precio[:precio.find('.')]
 centimos = precio[precio.find('.')+1:]
 
-print("Euros:", euros)
-print("Centimos:", centimos)
+print("Euros: ", euros)
+print("Centimos: ", centimos)
