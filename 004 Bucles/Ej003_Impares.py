@@ -17,6 +17,8 @@ impares = ''
 while(counter <= entero):
 
 	if(counter%2 != 0):
+		# si no es el numero final no me pongas la coma
+		# no funciona cuando el nº final es par: 10
 		if(counter != entero):
 			impares += (str(counter) + ', ')
 		else:
@@ -27,6 +29,23 @@ while(counter <= entero):
 print(impares)
 
 
+# Apurando las comas, funciona para: 10
+print('\n*** EJERCICIO 3 CHATGPT ***')
+counter = 1
+impares = ''
+
+while counter <= entero:
+	# si el resto no es 0
+	if counter % 2 != 0:
+		# si impares no esta vacia, agregame una coma
+		if impares != "":
+			impares += ", "
+
+		impares += str(counter)
+	counter += 1
+
+print(impares)
+
 
 
 print('\n*** EJERCICIO 3 - SOLUCION PROFE ***')
@@ -36,6 +55,7 @@ numero = int(input("Dame numero entero positivo: "))
 for i in range(1, numero+1, 2):
 	print(i, end=",")
 print()
+
 
 
 print('\n*** EJERCICIO 3 - OTRA SOLUCION 1 ***')
@@ -50,6 +70,7 @@ for i in range(numero+1):
 print()
 
 
+
 print('\n*** EJERCICIO 3 - OTRA SOLUCION 2 ***')
 ################################################
 # Otra solucion
@@ -62,6 +83,7 @@ while contador <= numero:
 		print(contador, end=",")
 	contador += 1
 print()
+
 
 
 print('\n*** EJERCICIO 3 - OTRA SOLUCION 3 ***')

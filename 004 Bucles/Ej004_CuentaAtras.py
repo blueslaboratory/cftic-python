@@ -38,28 +38,34 @@ print('\nCuenta atras:', cuentaAtras)
 
 
 
-
 print('\n*** EJERCICIO 4 - SOLUCION PROFE ***')
 numero = int(input("Dame numero entero positivo: "))
 
+# [numero, -1) con paso -1
 for i in range(numero, -1, -1):
 	print(i, end='')
 	if i:
 		print(',', end='')
 print()
 
+
+
 print('\n*** EJERCICIO 4 - OTRA SOLUCION 1 ***')
 #################################################################
 #  Otra solucion
 #################################################################
+# [numero, 0) con paso -1
 for i in range(numero, 0, -1):
 	print(i, end=',')
 print(0)
+
+
 
 print('\n*** EJERCICIO 4 - OTRA SOLUCION 2 ***')
 #################################################################
 #  Otra solucion
 #################################################################
+# [0, numero)
 for i in range(0, numero):
 	print(numero-i, end=',')
 print(0)

@@ -78,8 +78,10 @@ ttk.Label(frm, text="Hello World!").grid(column=3, row=0)
 # buttons
 # Si pulsas sobre con el boton derecho del raton llama a: button_second_click
 # e imprime por consola: Has pulsado el boton derecho
-btn = ttk.Button(frm, text="Quit", command=v_ppal.destroy).grid(column=6, row=5)
+btn = ttk.Button(frm, text="Quit", command=v_ppal.destroy)
+btn.grid(column=6, row=5)
 btn.bind("<Button-3>", button_second_click)
+
 
 # ttk.Button(frm, text="Quit", command=v_ppal.destroy).grid(column=6, row=5)
 ttk.Button(frm, text="Mostrar Mensaje", command=mostrar_mensaje).grid(column=2, row=1)

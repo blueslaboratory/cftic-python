@@ -20,7 +20,8 @@ numero = int(input("Dame numero entero positivo: "))
 
 # impares
 for i in range(1, numero+1, 2):
-	# cuenta atras
+	# print('Fila', i)
+	# cuenta atras con paso -2: [i, 0)
 	for j in range(i, 0, -2):
 		print(str(j), end=" ")
 	print("")

@@ -15,8 +15,22 @@ numero = int(input("Dame numero entero positivo: "))
 i = 2
 
 while numero % i != 0:
-    i += 1
+	i += 1
 if i == numero:
-    print(str(numero) + " es primo")
+	print(str(numero) + " es primo")
 else:
-    print(str(numero) + " no es primo")
+	print(str(numero) + " no es primo")
+
+
+
+print('\n*** EJERCICIO 10 - CHATGPT ***')
+flag = True
+
+if numero < 2:
+	flag = False
+# [2, int(numero^0.5)+1)
+for i in range(2, int(numero**0.5) +1):
+	if numero%i == 0:
+		flag = False
+
+print('Primo:', flag)

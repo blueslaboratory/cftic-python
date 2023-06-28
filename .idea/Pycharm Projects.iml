@@ -6,6 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/013/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/013_ProyectoReal/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/020 Calculadora/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/pythonProject/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

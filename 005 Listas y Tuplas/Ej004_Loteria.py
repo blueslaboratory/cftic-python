@@ -12,7 +12,7 @@ print('\n*** EJERCICIO 4 ***')
 
 numerosGanadores = []
 
-# [1,7]
+# [0,6) --(i+1)--> [1,7)
 for i in range(0,6):
 	n = int(input('Numero ' +str(i+1) +': '))
 	numerosGanadores.append(n)
@@ -28,4 +28,3 @@ print('Numeros ganadores: ', numerosGanadores, sep='')
 print('Numeros ganadores reversed: ', sorted(numerosGanadores, reverse=True), sep='')
 print('Complementario: ', complementario, sep='')
 print('Reintegro: ', reintegro, sep='')
-

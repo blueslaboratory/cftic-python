@@ -16,9 +16,10 @@ cantidad = float(input('Cantidad a invertir (₿): '))
 interesAnual = float(input('Interes anual (%):  '))
 years = int(input('Years: '))
 
-# [1-6)
+
 print('Interes compuesto')
 print('\nYear[i]: capitalObtenido')
+# [1, years+1)
 for i in range(1, years+1):
 	capitalObtenido = cantidad*(1+interesAnual/100)**i
 	print(f'Year[{i}]: {capitalObtenido:.2f}')

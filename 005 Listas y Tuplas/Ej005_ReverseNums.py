@@ -12,10 +12,11 @@ print('\n*** EJERCICIO 5 ***')
 numeros = []
 
 # Cargar la lista con los numeros
+# [1,10]
 for i in range(1,11):
 	numeros.append(i)
 
-# Imprimir inverso
+# Imprimir en inverso
 print(numeros[::-1])
 
 # Solucion

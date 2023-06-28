@@ -46,13 +46,13 @@ asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
 notas = []
 
 for asignatura in asignaturas:
-    nota = input("¿Qué nota has sacado en " + asignatura + "? ")
-    notas.append(nota)
-    print(id(notas))
+	nota = input("¿Qué nota has sacado en " + asignatura + "? ")
+	notas.append(nota)
+	print(id(notas))
 print(type(enumerate(asignaturas)))
 
 for index,asignatura in enumerate(asignaturas):
-    print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])
+	print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])
 
 
 
@@ -70,12 +70,12 @@ asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
 notas = []
 
 for asignatura in asignaturas:
-    nota = input("¿Qué nota has sacado en " + asignatura + "? ")
-    # Convierte nota que es str a un elemento de lista
-    notas = notas + [nota]
-    print(id(notas))
+	nota = input("¿Qué nota has sacado en " + asignatura + "? ")
+	# Convierte nota que es str a un elemento de lista
+	notas = notas + [nota]
+	print(id(notas))
 
 print(type(enumerate(asignaturas)))
 
 for index,asignatura in enumerate(asignaturas):
-    print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])
+	print("En la asignatura "+asignatura+" has sacado la nota "+notas[index])

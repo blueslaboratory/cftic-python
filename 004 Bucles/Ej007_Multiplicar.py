@@ -18,6 +18,7 @@ for i in range(1, 10+1):
 
 
 
+# Todas las tablas de multiplicar
 print('\n*** EJERCICIO 7 - SOLUCION PROFE ***')
 
 for i in range(1, 11):

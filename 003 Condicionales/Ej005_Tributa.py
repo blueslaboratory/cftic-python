@@ -62,14 +62,14 @@ else:
 print('\n*** OPERADOR DE CORTOCIRCUITO: AND ***')
 
 # si pones menor que 15 ya NO EVALUA la siguiente condicion
-if int(input("Dame edad :"))>15 and int(input("Dame ingresos mensuales :"))>1000:
+if int(input("Dame edad: "))>15 and int(input("Dame ingresos mensuales: "))>1000:
 	print("Tienes que tributar")
 else:
 	print("No tienes que tributar")
 
 # si pones menor que 15 ya SI EVALUA la siguiente condicion
 print('\n*** OPERADOR: & ***')
-if int(input("Dame edad :"))>15 & int(input("Dame ingresos mensuales :"))>1000:
+if int(input("Dame edad: "))>15 & int(input("Dame ingresos mensuales: "))>1000:
 	print("Tienes que tributar")
 else:
 	print("No tienes que tributar")

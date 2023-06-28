@@ -1,0 +1,46 @@
+2023-06-28 12:39:08 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 12:39:08 - ambos - INFO - division 27 / 3
+2023-06-28 12:45:15 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 12:45:15 - ambos - INFO - division 27 / 3
+2023-06-28 12:49:58 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 12:49:58 - ambos - INFO - division 27 / 3
+2023-06-28 12:55:36 - ambos - INFO - suma 4 + 5
+2023-06-28 12:55:36 - ambos - INFO - suma 6 + 7
+2023-06-28 12:55:36 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 12:55:36 - ambos - INFO - division 27 / 3
+2023-06-28 12:59:50 - ambos - INFO - [suma]
+2023-06-28 12:59:50 - ambos - DEBUG - [params][a:4][b:5]
+2023-06-28 13:00:31 - ambos - INFO - [suma]
+2023-06-28 13:00:31 - ambos - DEBUG - [params][a:4][b:5]
+2023-06-28 13:00:31 - ambos - DEBUG - [resultado:9]
+2023-06-28 13:00:31 - ambos - INFO - suma 6 + 7
+2023-06-28 13:00:31 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 13:00:31 - ambos - INFO - division 27 / 3
+2023-06-28 13:01:54 - ambos - INFO - suma 4 + 5
+2023-06-28 13:01:54 - ambos - INFO - [sumar1]
+2023-06-28 13:01:54 - ambos - DEBUG - [params][a:6][b:7]
+2023-06-28 13:01:54 - ambos - DEBUG - [resultado:13]
+2023-06-28 13:01:54 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 13:01:54 - ambos - INFO - division 27 / 3
+2023-06-28 13:16:41 - ambos - INFO - operaciones - sumar1 4 + 5
+2023-06-28 13:16:41 - ambos - INFO - operaciones - [sumar2]
+2023-06-28 13:16:41 - ambos - DEBUG - operaciones - [params][a:6][b:7]
+2023-06-28 13:16:41 - ambos - DEBUG - operaciones - [resultado:13]
+2023-06-28 13:17:11 - ambos - INFO - sumar1 4 + 5
+2023-06-28 13:17:11 - ambos - INFO - [sumar2]
+2023-06-28 13:17:11 - ambos - DEBUG - [params][a:6][b:7]
+2023-06-28 13:17:11 - ambos - DEBUG - [resultado:13]
+2023-06-28 13:17:11 - ambos - INFO - multiplicacion 3 * 6
+2023-06-28 13:17:11 - ambos - INFO - [multiplicar1]
+2023-06-28 13:17:11 - ambos - DEBUG - [params][a:4][b:7]
+2023-06-28 13:17:11 - ambos - DEBUG - [resultado:28]
+2023-06-28 13:17:11 - ambos - INFO - division 27 / 3
+2023-06-28 13:17:29 - ambos - INFO - operaciones - sumar1 4 + 5
+2023-06-28 13:17:29 - ambos - INFO - operaciones - [sumar2]
+2023-06-28 13:17:29 - ambos - DEBUG - operaciones - [params][a:6][b:7]
+2023-06-28 13:17:29 - ambos - DEBUG - operaciones - [resultado:13]
+2023-06-28 13:17:29 - ambos - INFO - operaciones - multiplicacion 3 * 6
+2023-06-28 13:17:29 - ambos - INFO - operaciones - [multiplicar1]
+2023-06-28 13:17:29 - ambos - DEBUG - operaciones - [params][a:4][b:7]
+2023-06-28 13:17:29 - ambos - DEBUG - operaciones - [resultado:28]
+2023-06-28 13:17:29 - ambos - INFO - operaciones - division 27 / 3
