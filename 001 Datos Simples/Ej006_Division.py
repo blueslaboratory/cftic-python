@@ -21,5 +21,3 @@ suma = int(n*(n+1)/2)
 suma = n*(n+1)//2
 
 print('Suma de los primeros enteros positivos de 1 hasta ' +str(n) +': ' +str(suma))
-
-

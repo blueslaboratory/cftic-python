@@ -21,5 +21,3 @@ IMC = masa/(estatura**2)
 IMC_rounded = round(IMC, 2)
 
 print('IMC = ', IMC_rounded)
-
-

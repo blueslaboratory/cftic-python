@@ -43,13 +43,14 @@ decrementa en 1, lo que permite recorrer la secuencia en sentido inverso.
 print('\nForma 3:')
 fraseInvertida = ''
 
+# [len(frase)-1, 0] con paso -1
 for i in range(len(frase)-1, -1, -1):
 	fraseInvertida += frase[i]
 	print(i, frase[i], fraseInvertida)
 
 
 
-# Forma 1: Letra a letra
+# Forma 1: Letra a letra (no invertida)
 print('\nForma 1 - Letra a letra:')
 fraseNoInvertida = ''
 
@@ -59,7 +60,7 @@ for i in range(len(frase)):
 
 
 
-# Forma 2: Letra a letra
+# Forma 2: Letra a letra (no invertida)
 print('\nForma 2 - Letra a letra:')
 fraseNoInvertida = ''
 

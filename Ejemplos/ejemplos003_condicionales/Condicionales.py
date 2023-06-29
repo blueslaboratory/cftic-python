@@ -11,6 +11,8 @@ cadenaNula = None
 
 if numero:
     print('Es cierto')
+elif:
+    print('Un elif salvaje aparecio')
 else:
     print('Es falso') #Resultado
 

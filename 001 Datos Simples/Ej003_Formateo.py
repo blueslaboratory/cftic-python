@@ -9,6 +9,7 @@ y después de que el usuario lo introduzca muestre por pantalla la cadena
 """
 
 print('\n *** EJERCICIO 3 ***')
+
 nombre = input('Introduce tu nombre: ')
 print('¡Hola ' +nombre +'!')
 
@@ -18,5 +19,3 @@ print('¡Hola', nombre, end='!\n')
 print(f'¡Hola {nombre}!')
 print('¡Hola %s!' % nombre)
 print('¡Hola {0}!'.format(nombre))
-
-

@@ -8,6 +8,9 @@ aritmética: ((3+2)/(2*5))^2
 """
 
 print('\n *** EJERCICIO 4 ***')
-operacion = ((3+2)/(2*5))**2
+
+operacion = ((3+2)/(2*5))**2 
+#(5/10)^2 = 0.5^2
+
 print('El resultado es:', operacion)
 

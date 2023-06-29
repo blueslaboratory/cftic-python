@@ -20,7 +20,7 @@ print(correoList[0] +'@' +'ceu.es')
 
 print('\n *** EJERCICIO 7 - SOLUCION PROFE***')
 
-correo = input("Correo:")
+correo = input("Correo: ")
 
 correo_sin_dominio = correo[:correo.find('@')]
 correo = correo_sin_dominio + "@ceu.es"

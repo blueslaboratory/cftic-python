@@ -21,11 +21,12 @@ print(myNumberInput)
 
 # Multiplicar la cadena myNumberInput n2 veces: concatenar
 n3 = n2 * myNumberInput
-print(n3)
+print('n3 concatenar:', n3)
 
 
 # Conseguir la multiplicacion: castear
 n3 = n2 * int(myNumberInput)
+print('n3 castear:', n3)
 
 
 # Print solo puede imprimir Strings, hay que castear los numeros a Strings:

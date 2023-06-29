@@ -1,12 +1,18 @@
 # Day 2 - 31/02/2023
 
+# Las cadenas son 'tuplas' en python: ()
+# Las cadenas y las tuplas son inmutables
+
+# Las 'listas' son con corchetes: []
+# Las listas son mutables
+
 
 print('\n*** CADENA 1 - LONGITUD Y SUBSTR ***')
 cadena = 'Hola mundo'
 
 print(cadena)
 
-print('Longitud Cadena: ', len(cadena))
+print('Longitud Cadena:', len(cadena))
 print('\ncadena: ' +cadena,
       '\ncadena[0]: ' +cadena[0],
       '\ncadena[len(cadena)-1]: ' +cadena[len(cadena)-1])
@@ -76,7 +82,7 @@ print(lista)
 print('\n*** CADENA 8 - SUBSTRINGS ***')
 cadena8 = 'mi carro me lo robaron'
 print('cadena8[5:] -->', cadena8[5:])
-print('cadena8[8:] -->', cadena8[:8])
+print('cadena8[:8] -->', cadena8[:8])
 print('cadena8[15:19] --> ', cadena8[15:19])
 print('cadena8[9:-3] + n --> ', cadena8[9:-3] + 'n')
 
