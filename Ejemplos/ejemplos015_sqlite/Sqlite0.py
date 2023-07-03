@@ -3,7 +3,7 @@
 import sqlite3
 
 # lugar donde me crea la BBDD
-conexion = sqlite3.connect('./Ejemplos/ejemplos014_sqlite/db/HR.db')
+conexion = sqlite3.connect('./Ejemplos/ejemplos015_sqlite/db/HR.db')
 
 cursor = conexion.cursor()
 

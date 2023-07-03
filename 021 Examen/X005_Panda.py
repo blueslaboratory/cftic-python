@@ -36,6 +36,23 @@ print(df.head(5))
 print('\n*** EDAD PROMEDIO DE LOS ESTUDIANTES ***')
 edad_promedio = round(df['Edad'].mean(), 2)
 print('Media de edad:', edad_promedio)
+edad_promedio2 = df.describe()['Edad']['mean']
+print('Media de edad2:', edad_promedio2)
+edad_promedio3 = df['Edad'].describe()['mean']
+print('Media de edad3:', edad_promedio3)
+edad_promedio4 = df.iloc[:,1].mean()
+print('Media de edad4:', edad_promedio4)
+edad_promedio5 = df.loc[:,'Edad'].mean()
+print('Media de edad5:', edad_promedio5)
+
+
+# Coger varias columnas
+print('\n*** COGER VARIAS COLUMNAS 0 ***')
+print(df[['Edad', 'Promedio']])
+print('\n*** COGER VARIAS COLUMNAS 1 ***')
+# : --> todas las filas
+# [1,2] --> columnas 1 y 2
+print(df.iloc[:, [1,2]])
 
 
 print('\n*** INFORMACION BASICA ***')

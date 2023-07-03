@@ -8,6 +8,7 @@ específica. La contraseña debe estar compuesta por letras mayúsculas, letras
 minúsculas y dígitos numéricos.
 '''
 
+# SOLUCION PROFE
 
 import random
 import string

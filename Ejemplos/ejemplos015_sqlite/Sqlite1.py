@@ -35,8 +35,8 @@ conexion1.close()
 import sqlite3
 
 # Establece una conexion con una base de datos SQLite3 ubicada en:
-# './Ejemplos/ejemplos014_sqlite/db/HR.db'.
-conexion2 = sqlite3.connect('./Ejemplos/ejemplos014_sqlite/db/HR.db')
+# './Ejemplos/ejemplos015_sqlite/db/HR.db'.
+conexion2 = sqlite3.connect('./Ejemplos/ejemplos015_sqlite/db/HR.db')
 
 # Define el nombre de la tabla en la base de datos SQLite3 a la que se accederá
 nombreTabla = 'persona'

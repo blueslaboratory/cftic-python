@@ -8,7 +8,7 @@ class ConexionMySQL:
 
 	# costructor de la clase
 	# inicializa el atributo conexion a None
-	# ver: ejemplos010_POO
+	# ver: ejemplos013_POO
 
 	def __init__(self):
 		# si la quieres privada habria que refactorizar conexion a __conexion

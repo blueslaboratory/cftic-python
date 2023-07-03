@@ -5,11 +5,11 @@
 import pandas as pd 
 
 # Cargar datos desde un archivo CSV
-df = pd.read_csv('./Ejemplos/ejemplos013_panda/datos.csv')
+df = pd.read_csv('./Ejemplos/ejemplos012_panda/datos.csv')
 
 # Escribir datos a un archivo Excel
 # Solo sale bien en el Excel original
-df.to_excel('./Ejemplos/ejemplos013_panda/excel/personas.xlsx', index=False)
+df.to_excel('./Ejemplos/ejemplos012_panda/excel/personas.xlsx', index=False)
 
 
 # Cargar datos desde una base de datos SQL

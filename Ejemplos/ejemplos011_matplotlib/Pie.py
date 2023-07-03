@@ -5,21 +5,19 @@
 import matplotlib.pyplot as plt 
 
 # Datos
-x = ['A', 'B', 'C', 'D']
-y = [10, 20, 15, 25]
+etiquetas = ['Manzanas', 'Naranjas', 'Plátanos', 'Fresas']
+valores = [30, 25, 20, 15]
 
-# Crear el gráfico de barras
-plt.bar(x, y)
+# Crear el gráfico de torta
+plt.pie(valores, labels=etiquetas) 
 
 # Personalizar el gráfico
-plt.title('Gráfico de barras')
-plt.xlabel('Categorías')
-plt.ylabel('Valores') 
+plt.title('Gráfico de torta') 
 
 # Salvar imagen en un fichero
 # Tiene que estar antes de mostrar grafico, sino no funciona
 # La ruta parte de raiz
-plt.savefig('./Ejemplos/ejemplos012_matplotlib/images/barras.png')
+plt.savefig('./Ejemplos/ejemplos011_matplotlib/images/pie.png')
 
 # Mostrar el gráfico
 plt.show()
