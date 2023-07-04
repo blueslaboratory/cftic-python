@@ -35,6 +35,9 @@ pip install openpyxl
 """
 
 
+# Nomenclatura:
+"Ej001_F --> Falta por hacer (SOL)"
+
 
 
 # Hello World
