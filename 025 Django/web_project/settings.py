@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qzps0&6ny_eqgj@5x^8nkgl2=wudy5fv0xhergh7uih^q9njhk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -122,3 +122,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Usar el comando collectstatic
+STATIC_ROOT = BASE_DIR/'static_collected'

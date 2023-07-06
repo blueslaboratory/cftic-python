@@ -6,8 +6,18 @@ import pandas as pd
 from django.http import HttpResponse 
 
 
-def home(request):
+def hi(request):
     return HttpResponse("Hello, Django!")
+
+def home(request):
+    # return HttpResponse("Hello, Django!")
+    return render(request, "hello/home.html")
+
+def about(request):
+    return render(request, "hello/about.html")
+ 
+def contact(request):
+    return render(request, "hello/contact.html")
 
 def hello_there(request, name):
     print(request.build_absolute_uri()) #optional
