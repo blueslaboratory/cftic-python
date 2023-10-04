@@ -38,6 +38,10 @@ while counter <= entero:
 	# si el resto no es 0
 	if counter % 2 != 0:
 		# si impares no esta vacia, agregame una coma
+		# 1º compruebo si la cadena esta vacia
+		# --> el nº es par: no entra aqui
+		# --> el nº es impar y no esta vacia: pongo la coma
+		# 2º pongo 1º la ',' y despues el nº excepto cuando impares esta vacia
 		if impares != "":
 			impares += ", "
 
