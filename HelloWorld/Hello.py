@@ -30,7 +30,7 @@ MATPLOTLIB:
 pip install matplotlib
 
 PANDA:
-pip install panda
+pip install pandas
 pip install openpyxl
 """
 

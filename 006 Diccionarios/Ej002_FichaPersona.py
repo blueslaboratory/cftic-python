@@ -17,10 +17,10 @@ telefono = input('Telefono: ')
 
 
 fichaPersona = {
-	'nombre':nombre,
-	'edad':edad,
-	'direccion':direccion,
-	'telefono':telefono
+	'nombre': nombre,
+	'edad': edad,
+	'direccion': direccion,
+	'telefono': telefono
 }
 
 

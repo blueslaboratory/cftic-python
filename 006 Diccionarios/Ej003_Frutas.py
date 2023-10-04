@@ -17,15 +17,15 @@ Naranja	    0.70
 
 print('\n*** EJERCICIO 3 ***')
 
-diccionarioFrutas = {'platano':1.35,
-                     'manzana':0.80,
-                     'pera':0.85,
-                     'naranja':0.70}
+diccionarioFrutas = {'platano': 1.35,
+                     'manzana': 0.80,
+                     'pera': 0.85,
+                     'naranja': 0.70}
 
 fruta = input('Fruta: ')
 masa = float(input('Masa (kg): '))
 
-# No se puede usar, da una excepcion si no existe la fruta, usar get()
+# No se puede usar, da una excepcion si NO existe la fruta, usar get()
 # existeFrutaPrecio = diccionarioFrutas[fruta.lower()]
 existeFrutaPrecio = diccionarioFrutas.get(fruta.lower())
 
@@ -37,7 +37,7 @@ existeFrutaPrecio = diccionarioFrutas.get(fruta.lower())
 # print(str(existeFrutaPrecio))
 
 if(existeFrutaPrecio):
-	precio = existeFrutaPrecio*masa
-	print(fruta.capitalize(), 'precio:', str(precio), '€')
+    precio = existeFrutaPrecio*masa
+    print(fruta.capitalize(), 'precio:', str(precio), '€')
 else:
-	print('No existe la fruta en el diccionario')
+    print('No existe la fruta en el diccionario')

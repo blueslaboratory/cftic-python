@@ -14,9 +14,9 @@ número total de créditos del curso.
 print('\n*** EJERCICIO 5 ***')
 
 asignaturas = {
-	'Matematicas':6,
-	'Fisica':4,
-	'Quimica':5
+	'Matematicas': 6,
+	'Fisica': 4,
+	'Quimica': 5
 }
 
 creditos = 0

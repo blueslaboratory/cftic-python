@@ -18,7 +18,7 @@ mm = fechaList[1]
 aaaa = fechaList[2]
 
 meses = {
-	1: "Enero",
+    1: "Enero",
     2: "Febrero",
     3: "Marzo",
     4: "Abril",
@@ -35,6 +35,6 @@ meses = {
 mes = meses.get(int(mm), False)
 
 if(mes == False):
-	print('Mes existe:', mes)
+    print('Mes existe:', mes)
 else:
-	print(dd, 'de', mes, 'de', aaaa)
+    print(dd, 'de', mes, 'de', aaaa)

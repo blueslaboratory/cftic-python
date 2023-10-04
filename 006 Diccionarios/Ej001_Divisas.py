@@ -19,9 +19,9 @@ diccionarioDivisas = {'Euro':'€',
 divisa = input('Buscar divisa: ')
 
 
-# No se puede usar, da una excepcion si no existe la divisa, usar get()
-# simbolo = diccionarioDivisas[divisa.lower().capitalize()]
-simbolo = diccionarioDivisas.get(divisa.lower().capitalize())
+# No se puede usar, da una excepcion si NO existe la divisa, usar get()
+simbolo = diccionarioDivisas[divisa.lower().capitalize()]
+# simbolo = diccionarioDivisas.get(divisa.lower().capitalize())
 
 # Miramos si la variable no esta vacia
 # True: variable definida + cualquier valor, 1
@@ -31,6 +31,6 @@ simbolo = diccionarioDivisas.get(divisa.lower().capitalize())
 # print(str(simbolo))
 
 if (simbolo):
-	print('Existe:', simbolo)
+    print('Existe:', simbolo)
 else:
-	print('No existe', divisa)
+    print('No existe', divisa)

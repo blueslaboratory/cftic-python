@@ -1,7 +1,7 @@
 # Day 5 - 05/06/2023
 
 diccionario = {'nombre': 'iJunio2023',
-                202306:4096,
+                202306: 4096,
                'codigo': 1,
                'popeame': 'yaNoHayStop'}
 

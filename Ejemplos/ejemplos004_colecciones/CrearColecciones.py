@@ -2,22 +2,27 @@
 # Construir Colecciones
 print('\n*** Construir lista, tupla y cuadrado***')
 
-cuadradosLista = [x**2 for x in range(1,11)] #Lista
+#Lista []
+cuadradosLista = [x**2 for x in range(1,11)]
 print(type(cuadradosLista))
 print(cuadradosLista)
 
-cuadradosTupla = tuple(x**2 for x in range(1,11)) #Tuplas
+#Tuplas ()
+cuadradosTupla = tuple(x**2 for x in range(1,11))
 print(type(cuadradosTupla))
 print(cuadradosTupla)
 
-cuadradosSet = {x**2 for x in range(1,11)} #Set
+#Set {}
+cuadradosSet = {x**2 for x in range(1,11)}
 print(type(cuadradosSet))
 print(cuadradosSet)
 
-cuadradosDiccionario = {x:x**2 for x in range(1,11)} #Diccionarios
+#Diccionarios {:}
+cuadradosDiccionario = {x:x**2 for x in range(1,11)}
 print(type(cuadradosDiccionario))
 print(cuadradosDiccionario)
 
-cuadradosSetTuplas = {(x, x**2) for x in range(1,11)} #cuadradosSetTuplas
+#cuadradosSetTuplas {()}
+cuadradosSetTuplas = {(x, x**2) for x in range(1,11)}
 print(type(cuadradosSetTuplas))
 print(cuadradosSetTuplas)
