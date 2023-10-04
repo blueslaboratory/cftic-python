@@ -1,6 +1,7 @@
 # Day 29 - 07/07/2023
 # pip install openai
 # https://liveconnect.chat/es/obtener-api-key-openai-chatgpt
+# Conexion a ChatGPT a traves de un script y el terminal
 
 import openai
 
@@ -13,6 +14,7 @@ while True:
 
     if prompts == "exit":
         break
+
     completion = openai.Completion.create(engine="text-davinci-003", prompt=prompts, max_tokens=2048)
 
     print(completion.choices[0].text)

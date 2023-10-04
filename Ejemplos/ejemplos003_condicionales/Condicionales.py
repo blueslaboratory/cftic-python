@@ -11,7 +11,7 @@ cadenaNula = None
 
 if numero:
     print('Es cierto')
-elif:
+elif numero == 0:
     print('Un elif salvaje aparecio')
 else:
     print('Es falso') #Resultado
